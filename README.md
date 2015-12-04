@@ -15,5 +15,4 @@ Im folgenden Tutorial wollen wir die folgenden Fragestellungen vertiefen:
 * Wie können Anwendungen so (um-)gebaut werden, dass sie auf einem Cluster-Betriebssystem
 laufen?
 
-Grundvoraussetzung ist ein Rechner mit Vagrant (https://www.vagrantup.com) und VirtualBox (https://www.virtualbox.org).
-Vor dem Tutorial bitte bereits eine Ubuntu Box für Vagrant herunterladen mit dem Befehl `vagrant box add ubuntu/trusty64`.
+Grundvoraussetzung ist ein Rechner mit Vagrant (https://www.vagrantup.com), VirtualBox (https://www.virtualbox.org) und MinGW (http://www.mingw.org/). Vor dem Tutorial bitte bereits eine Ubuntu Box für Vagrant herunterladen mit dem Befehl `vagrant box add ubuntu/trusty64`.
