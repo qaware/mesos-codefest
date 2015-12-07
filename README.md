@@ -22,8 +22,6 @@ Grundvoraussetzung ist ein Rechner mit Vagrant (https://www.vagrantup.com), Virt
 
 ## Inhalte
 
-Die Präsentationsfolien sind hier zu finden: https://speakerdeck.com/mhausenblas/marathon-and-kubernetes
-
 Zu erst die DCOS CLI installieren: https://docs.mesosphere.com/install/cli
 Anschließend dieses Repo in den Ordner clonen, in dem die CLI installiert wurde. Zum Beispiel habe ich die CLI unter `~/dcos/` installiert, deshalb führe ich folgendes durch:
 
@@ -59,7 +57,6 @@ Die Sessions sind:
 
 1. [Containers &amp; Docker](./docker)
 1. [Mesos &amp; Marathon](./mesos-marathon)
-1. [Putting It All Together](./piat)
 
 ## Weiterführende Informationen
 
