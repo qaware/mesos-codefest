@@ -59,7 +59,6 @@ Die Sessions sind:
 
 1. [Containers &amp; Docker](./docker)
 1. [Mesos &amp; Marathon](./mesos-marathon)
-1. [Putting It All Together](./piat)
 
 ## Weiterführende Informationen
 

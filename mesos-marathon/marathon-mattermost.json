@@ -1,0 +1,27 @@
+{
+    "acceptedResourceRoles": [
+        "slave_public"
+    ],
+    "constraints": [
+        [
+            "hostname",
+            "UNIQUE"
+        ]
+    ],
+    "container": {
+        "docker": {
+            "image": "mattermost/platform",
+            "network": "BRIDGE",
+            "portMappings": [
+                {
+                    "containerPort": 80,
+                    "hostPort": 0
+                }
+            ]
+        },
+        "type": "DOCKER"
+    },
+    "cpus": 1,
+    "id": "mm",
+    "mem": 2048
+}
