@@ -2,6 +2,10 @@
 
 There are a few [valuable Docker](http://www.nkode.io/2014/08/24/valuable-docker-links.html) links out there.
 
+## Placeholders
+- $DCOS_CLI_HOME: DCOS command line tool directory
+- $MASTER_IP_ADDRESS: Mesos Master IP address
+
 ## Install
 
 Make sure you have your DCOS cluster per team up and running. Then do:
@@ -13,7 +17,7 @@ $ chmod 600 ~/.ssh/your-team-key
 eval `ssh-agent -s`
 ssh-add ~/.ssh/your-team-key
 # log in with forwarding enabled (so that you can log in from master to one of the agents)
-ssh -A core@MASTER_IP_ADDRESS
+ssh -A core@$MASTER_IP_ADDRESS
 ```
 
 We will carry out the following tasks on the Mesos master instance of the DCOS. It is a [CoreOS](https://coreos.com/) environment, so Docker native.
