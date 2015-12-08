@@ -22,7 +22,7 @@ Grundvoraussetzung ist ein Rechner mit Vagrant (https://www.vagrantup.com), Virt
 
 ## Inhalte
 
-Zu erst die DCOS CLI installieren: https://docs.mesosphere.com/install/cli
+Zu erst die DCOS CLI installieren: https://docs.mesosphere.com/install/cli.
 Anschließend dieses Repo in den Ordner clonen, in dem die CLI installiert wurde. Zum Beispiel habe ich die CLI unter `~/dcos/` installiert, deshalb führe ich folgendes durch:
 
 ```
