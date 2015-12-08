@@ -42,3 +42,6 @@ There are more sample app specs here in this directory:
     $ cd $DCOS_CLI_HOME
     $ dcos marathon app add marathon-mattermost.json
     $ dcos marathon app list
+    
+## More advanced exercises
+... [to find here](/advanced)
