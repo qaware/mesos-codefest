@@ -44,4 +44,4 @@ There are more sample app specs here in this directory:
     $ dcos marathon app list
     
 ## More advanced exercises
-... [to find here](/advanced)
+... [to find here](advanced)
