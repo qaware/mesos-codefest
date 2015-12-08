@@ -1,8 +1,12 @@
 # Advanced: logging with cAdvisor, InfluxDB and Grafana
 
-Source: https://github.com/google/cadvisor
+## Placeholders
+- $DCOS_CLI_HOME: DCOS command line tool directory
+- $MASTER_IP_ADDRESS: Mesos Master IP address
+- $PUBLIC_SLAVE_IP_ADDRESS: Mesos Public Slave IP address
 
 ## Step 1: base deployment of cAdvisor
+Source: https://github.com/google/cadvisor
 
 Deploy the app in Marathon:
 
@@ -23,7 +27,7 @@ Where does it run?
           12235
         ],
 
-Note this address (`ip-10-0-7-124.us-west-2.compute.internal`) and port (`12235`) and look it up in the AWS/EC2 console. In my case the public DNS was `ec2-52-27-229-31.us-west-2.compute.amazonaws.com` so we point our browser there (`http://ec2-52-27-229-31.us-west-2.compute.amazonaws.com:12235/containers/`):
+Note the port (`12235`) and point the browser there (`$PUBLIC_SLAVE_IP_ADDRESS:12235/containers/`):
 
 
 ![cAdvisor screenshot](cadvisor-screenshot.png)
@@ -47,7 +51,7 @@ Where does it run?
           20317
         ],
         
-Note this address (`ip-10-0-7-124.us-west-2.compute.internal`) and the first port (`20316`) and look it up in the AWS/EC2 console. In my case the public DNS was `ec2-52-27-229-31.us-west-2.compute.amazonaws.com` so we point our browser there (`http://ec2-52-27-229-31.us-west-2.compute.amazonaws.com:20316`):
+Note the first port (`20316`) and point the browser there (`$PUBLIC_SLAVE_IP_ADDRESS:20316`):
 
 ![InfluxDB setup screenshot](influxdb-screenshot_0.png)
 
@@ -84,7 +88,7 @@ Deploy Grafana in Marathon:
         21403
       ],
 
-And again, following the same steps as above we discover Grafana running on `http://ec2-52-27-229-31.us-west-2.compute.amazonaws.com:21403` (log in with `admin`|`admin`)
+And again, following the same steps as above we discover Grafana running on `$PUBLIC_SLAVE_IP_ADDRESS:21403` (log in with `admin`|`admin`)
 
 ![Grafana setup screenshot](grafana-screenshot_0.png)
 
