@@ -22,7 +22,9 @@ Grundvoraussetzung ist ein Rechner mit Vagrant (https://www.vagrantup.com), Virt
 
 ## Inhalte
 
-Zu erst die DCOS CLI installieren: https://docs.mesosphere.com/install/cli.
+Eine Vagrant-Umgebung initialisieren `vagrant init ubuntu/trusty64`, die Box starten `vagrant up` und per SSH in die Box verbinden `vagrant ssh`.
+
+Zuerst die DCOS CLI installieren: https://docs.mesosphere.com/install/cli.
 Anschließend dieses Repo in den Ordner clonen, in dem die CLI installiert wurde. Zum Beispiel habe ich die CLI unter `~/dcos/` installiert, deshalb führe ich folgendes durch:
 
 ```
