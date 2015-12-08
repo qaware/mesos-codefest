@@ -1,7 +1,9 @@
 # Mesos and Marathon 101
+Keep https://mesosphere.github.io/marathon/docs open in a browser, you'll need it.
 
-Keep https://mesosphere.github.io/marathon/docs/ open in a browser, you'll need it.
-
+## Placeholders
+- $DCOS_CLI_HOME: DCOS command line tool directory
+- $MASTER_IP_ADDRESS: Mesos Master IP address
 
 ## Install Marathon
 
@@ -20,7 +22,7 @@ Since Marathon is installed by default on DCOS this is a NOP.
 Note that we will use [HTTPie](http://httpie.org) in the following but you can use `curl` should you wish to do that.
 
     $ cd $DCOS_CLI_HOME
-    $ http POST http://$DCOS_DASHBOARD_FQHN/service/marathon/v2/apps < mesos-codefest/mesos-marathon/marathon-hello-world.json
+    $ http POST http://$MASTER_IP_ADDRESS/service/marathon/v2/apps < mesos-codefest/mesos-marathon/marathon-hello-world.json
 
 There are more sample app specs here in this directory:
 
@@ -30,7 +32,10 @@ There are more sample app specs here in this directory:
 
 ## List apps via Marathon HTTP API
 
-    $ http http://$DCOS_DASHBOARD_FQHN/service/marathon/v2/apps | python -mjson.tool
+    $ http http://$MASTER_IP_ADDRESS/service/marathon/v2/apps
+    
+## Launch & list apps via Java Code
+- [Sample code](https://github.com/adersberger/cloudcomputing/blob/master/06-cluster-scheduling/uebung/loesung/src/main/java/edu/qaware/cc/marathon/MarathonController.java)
 
 ## Use Marathon in DCOS
 
