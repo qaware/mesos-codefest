@@ -7,7 +7,7 @@ Keep https://mesosphere.github.io/marathon/docs/ open in a browser, you'll need 
 
 Since Marathon is installed by default on DCOS this is a NOP.
 
-## Launch apps via the Marathon UI 
+## Launch apps via the Marathon UI
 
 - Got to DCOS dashboard and click on the Marathon service
 - In the Marathon UI
@@ -20,7 +20,7 @@ Since Marathon is installed by default on DCOS this is a NOP.
 Note that we will use [HTTPie](http://httpie.org) in the following but you can use `curl` should you wish to do that.
 
     $ cd $DCOS_CLI_HOME
-    $ http POST http://$DCOS_DASHBOARD_FQHN/service/marathon/v2/apps < marathon-hello-world.json
+    $ http POST http://$DCOS_DASHBOARD_FQHN/service/marathon/v2/apps < mesos-codefest/mesos-marathon/marathon-hello-world.json
 
 There are more sample app specs here in this directory:
 
